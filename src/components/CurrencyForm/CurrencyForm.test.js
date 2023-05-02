@@ -1,6 +1,7 @@
 import { render, screen, cleanup } from '@testing-library/react';
 import CurrencyForm from './CurrencyForm';
 import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom/extend-expect';
 
 const testCases = [
   { amount: '100', from: 'PLN', to: 'USD' },
